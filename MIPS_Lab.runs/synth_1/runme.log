@@ -1,0 +1,186 @@
+
+*** Running vivado
+    with args -log mips.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source mips.tcl -notrace
+Command: synth_design -top mips -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 40028
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:214]
+INFO: [Synth 8-6157] synthesizing module 'Imem' [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Imem' (1#1) [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:128]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (2#1) [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (3#1) [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:192]
+INFO: [Synth 8-6157] synthesizing module 'Dmem' [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'Dmem' (4#1) [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (5#1) [C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.srcs/sources_1/new/mips.v:214]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1058  
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 44    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:13 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:14 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:18 . Memory (MB): peak = 1068.227 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.227 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:24 . Memory (MB): peak = 1068.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nfslh/OneDrive/Classes/4th Year/Fall 2020/SYSC 4310/02. Labs/MIPS_Lab/MIPS_Lab.runs/synth_1/mips.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_utilization_synth.rpt -pb mips_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 13:33:27 2020...
